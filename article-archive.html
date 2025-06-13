@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SportGear - Arsip Artikel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans bg-gray-100">
+    <!-- Header -->
+    <header class="bg-black text-white p-4 flex justify-between items-center">
+      <div class="text-2xl font-bold"><a href="index.html">SportGear</a></div>
+      <nav class="space-x-6 flex items-center">
+        <a href="#" class="hover:text-gray-300">New</a>
+        <a href="#" class="hover:text-gray-300">Olahraga</a>
+        <a href="#" class="hover:text-gray-300">Brands</a>
+        <a href="#" class="hover:text-gray-300">Kategori</a>
+        <a href="#" class="bg-red-600 px-3 py-1 rounded hover:bg-red-700"
+          >Sale</a
+        >
+      </nav>
+      <div class="flex items-center space-x-4">
+        <div class="relative">
+          <input
+            type="text"
+            placeholder="Cari apa bro/sist..."
+            class="p-2 pl-8 rounded text-black w-64"
+          />
+          <span class="absolute left-2 top-1/2 transform -translate-y-1/2"
+            >🔍</span
+          >
+        </div>
+        <a href="cart.html" class="hover:text-gray-300">🛒</a>
+        <a href="#" class="hover:text-gray-300">Login | Register</a>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="bg-white p-4 shadow-sm">
+      <div class="container mx-auto">
+        <div class="text-sm">
+          <a href="index.html" class="text-gray-500 hover:text-black">Home</a>
+          &gt;
+          <span class="font-semibold">Artikel</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Article Archive Title -->
+    <div class="container mx-auto py-8">
+      <h1 class="text-3xl font-bold mb-6">Artikel Olahraga Terbaru</h1>
+
+      <!-- Article Filter -->
+      <div class="bg-white p-4 mb-6 rounded shadow">
+        <div class="flex flex-wrap gap-4">
+          <button class="bg-black text-white px-4 py-2 rounded">Semua</button>
+          <button class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded">
+            Basketball
+          </button>
+          <button class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded">
+            Running
+          </button>
+          <button class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded">
+            Football
+          </button>
+          <button class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded">
+            Fitness
+          </button>
+          <button class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded">
+            Lifestyle
+          </button>
+        </div>
+      </div>
+
+      <!-- Featured Article -->
+      <div class="bg-white rounded shadow overflow-hidden mb-8">
+        <div class="md:flex">
+          <div class="md:w-2/3">
+            <img
+              src="https://assets.skor.id/Skor_id_ec7786a933.jpeg"
+              alt="Featured Article"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="md:w-1/3 p-6">
+            <div class="text-gray-500 mb-2">12 Mei 2025 | Basketball</div>
+            <h2 class="text-2xl font-bold mb-4">
+              Sepatu Basket Terbaru dari Nike yang Akan Rilis Bulan Ini
+            </h2>
+            <p class="text-gray-700 mb-4">
+              Nike kembali menghadirkan inovasi terbaru dalam dunia sepatu
+              basket dengan teknologi yang lebih responsif dan desain yang lebih
+              agresif...
+            </p>
+            <a
+              href="article-detail.html"
+              class="inline-block bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700"
+              >Baca Selengkapnya</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Article Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Article 1 -->
+        <div class="bg-white rounded shadow overflow-hidden">
+          <img
+            src="https://asset.kompas.com/crops/Pa9TaNHfQuLuxhrmfkSsJUmLxpM=/112x93:832x573/1200x800/data/photo/2024/02/13/65cb1705bb1c3.jpg"
+            alt="Article 1"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <div class="text-gray-500 mb-2">10 Mei 2025 | Running</div>
+            <h3 class="text-xl font-bold mb-2">
+              Tips Memilih Sepatu Lari yang Tepat untuk Pemula
+            </h3>
+            <p class="text-gray-700 mb-4">
+              Bagi pemula, memilih sepatu lari yang tepat bisa menjadi tantangan
+              tersendiri. Berikut adalah beberapa tips yang bisa membantu...
+            </p>
+            <a
+              href="article-detail.html"
+              class="text-red-600 hover:text-red-800 font-semibold"
+              >Baca Selengkapnya →</a
+            >
+          </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="bg-white rounded shadow overflow-hidden">
+          <img
+            src="https://cdn1-production-images-kly.akamaized.net/i46xPU4BijqgqJm9EN4eyTHMo-E=/1200x900/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5013906/original/004561100_1732076800-tips-memilih-sepatu-futsal.jpg"
+            alt="Article 2"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <div class="text-gray-500 mb-2">8 Mei 2025 | Football</div>
+            <h3 class="text-xl font-bold mb-2">
+              Perbandingan Sepatu Futsal Terbaik untuk Lapangan Indoor
+            </h3>
+            <p class="text-gray-700 mb-4">
+              Sepatu futsal untuk lapangan indoor memiliki karakteristik khusus.
+              Kami membandingkan beberapa model terbaik dari berbagai brand...
+            </p>
+            <a
+              href="article-detail.html"
+              class="text-red-600 hover:text-red-800 font-semibold"
+              >Baca Selengkapnya →</a
+            >
+          </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="bg-white rounded shadow overflow-hidden">
+          <img
+            src="https://news.ncrsport.com/wp-content/uploads/2025/05/image-7.png"
+            alt="Article 3"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <div class="text-gray-500 mb-2">5 Mei 2025 | Basketball</div>
+            <h3 class="text-xl font-bold mb-2">
+              Lamelo Ball Dan Puma Siapkan MB.04 Lo "Ice White" Buat Musim Panas
+            </h3>
+            <p class="text-gray-700 mb-4">
+              Lamelo Ball kembali berkolaborasi dengan Puma untuk menghadirkan
+              sepatu basket edisi terbatas yang dirancang khusus untuk musim
+              panas...
+            </p>
+            <a
+              href="article-detail.html"
+              class="text-red-600 hover:text-red-800 font-semibold"
+              >Baca Selengkapnya →</a
+            >
+          </div>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="bg-white rounded shadow overflow-hidden">
+          <img
+            src="https://www.ob-fit.com/alat-olahraga-dirumah/rekomendasi-alat-olahraga-untuk-di-rumah/"
+            alt="Article 4"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <div class="text-gray-500 mb-2">3 Mei 2025 | Fitness</div>
+            <h3 class="text-xl font-bold mb-2">
+              5 Aksesori Fitness yang Wajib Dimiliki untuk Latihan di Rumah
+            </h3>
+            <p class="text-gray-700 mb-4">
+              Latihan fitness di rumah bisa menjadi lebih efektif dengan
+              aksesori yang tepat. Berikut 5 aksesori yang wajib dimiliki untuk
+              hasil maksimal...
+            </p>
+            <a
+              href="article-detail.html"
+              class="text-red-600 hover:text-red-800 font-semibold"
+              >Baca Selengkapnya →</a
+            >
+          </div>
+        </div>
+
+        <!-- Article 5 -->
+        <div class="bg-white rounded shadow overflow-hidden">
+          <img
+            src="https://assets-a1.kompasiana.com/items/album/2024/12/29/tren-sepatu-sneakers-6771482dc925c4367e11e012.jpg"
+            alt="Article 5"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <div class="text-gray-500 mb-2">1 Mei 2025 | Lifestyle</div>
+            <h3 class="text-xl font-bold mb-2">
+              Tren Sneakers 2025: Apa yang Akan Populer Tahun Ini?
+            </h3>
+            <p class="text-gray-700 mb-4">
+              Dunia sneakers terus berkembang dengan tren baru setiap tahunnya.
+              Kami merangkum prediksi tren sneakers yang akan populer di tahun
+              2025...
+            </p>
+            <a
+              href="article-detail.html"
+              class="text-red-600 hover:text-red-800 font-semibold"
+              >Baca Selengkapnya →</a
+            >
+          </div>
+        </div>
+
+        <!-- Article 6 -->
+        <div class="bg-white rounded shadow overflow-hidden">
+          <img
+            src="https://jadwallari.id/wp-content/uploads/2024/10/Jakarta-City-Run-2025.jpg"
+            alt="Article 6"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <div class="text-gray-500 mb-2">28 April 2025 | Running</div>
+            <h3 class="text-xl font-bold mb-2">
+              Persiapan Menghadapi Marathon Jakarta 2025
+            </h3>
+            <p class="text-gray-700 mb-4">
+              Marathon Jakarta 2025 akan segera digelar. Berikut adalah tips
+              persiapan dan perlengkapan yang dibutuhkan untuk menghadapi event
+              tersebut...
+            </p>
+            <a
+              href="article-detail.html"
+              class="text-red-600 hover:text-red-800 font-semibold"
+              >Baca Selengkapnya →</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="flex justify-center mt-8">
+        <div class="flex space-x-2">
+          <a href="#" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+            >«</a
+          >
+          <a href="#" class="bg-black text-white px-4 py-2 rounded">1</a>
+          <a href="#" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+            >2</a
+          >
+          <a href="#" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+            >3</a
+          >
+          <a href="#" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+            >4</a
+          >
+          <a href="#" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+            >5</a
+          >
+          <a href="#" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+            >»</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white p-6 mt-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div>
+          <p class="font-bold">SOCIAL</p>
+          <div class="flex space-x-2 mt-2">
+            <a href="#" class="text-gray-400 hover:text-white">FB</a>
+            <a href="#" class="text-gray-400 hover:text-white">IG</a>
+            <a href="#" class="text-gray-400 hover:text-white">TW</a>
+          </div>
+        </div>
+        <div>
+          <p class="font-bold">BANTUAN</p>
+          <p>
+            <a href="#" class="text-gray-400 hover:text-white">Cara Belanja</a>
+          </p>
+          <p>
+            <a href="#" class="text-gray-400 hover:text-white"
+              >Syarat dan Ketentuan</a
+            >
+          </p>
+          <p>
+            <a href="#" class="text-gray-400 hover:text-white"
+              >Konfirmasi Pembayaran</a
+            >
+          </p>
+        </div>
+        <div>
+          <p class="font-bold">CUSTOMER SERVICE</p>
+          <p>+62 123-456-7890</p>
+          <p>
+            <a href="#" class="text-gray-400 hover:text-white"
+              >sportgear@contact.com</a
+            >
+          </p>
+        </div>
+        <div>
+          <p class="font-bold">LAPORAN PENGADUAN KONSUMEN</p>
+          <p>
+            Direktorat Jenderal Perlindungan Konsumen dan Tertib Niaga
+            Kementerian Perdagangan Republik Indonesia
+          </p>
+          <p>+62 123-456-7890</p>
+        </div>
+      </div>
+      <div class="mt-4 text-center">
+        <p>© 2025 SportGear. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

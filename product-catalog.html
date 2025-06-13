@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportGear - Katalog Produk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-100">
+    <!-- Header (Copied from index.html) -->
+    <header class="bg-black text-white py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="text-2xl font-bold text-orange-500">
+                    <a href="index.html" class="flex items-center">
+                        <span class="text-orange-500">SPORT</span><span class="text-white">GEAR</span>
+                    </a>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="#" class="hover:text-gray-300 flex items-center">
+                        New
+                        <span class="bg-green-500 text-white text-xs px-1 rounded ml-1">NEW</span>
+                    </a>
+                    <div class="relative group">
+                        <a href="#" class="hover:text-gray-300 flex items-center">
+                            Olahraga
+                            <i class="fas fa-chevron-down text-xs ml-1"></i>
+                        </a>
+                        <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden z-20 hidden group-hover:block">
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Basketball</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Running</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Football</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Training</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Badminton</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="#" class="hover:text-gray-300 flex items-center">
+                            Brands
+                            <i class="fas fa-chevron-down text-xs ml-1"></i>
+                        </a>
+                        <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden z-20 hidden group-hover:block">
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Nike</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Adidas</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Puma</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Under Armour</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Asics</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="product-catalog.html" class="hover:text-gray-300 flex items-center">
+                            Kategori
+                            <i class="fas fa-chevron-down text-xs ml-1"></i>
+                        </a>
+                        <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden z-20 hidden group-hover:block">
+                            <a href="product-catalog.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Sepatu</a>
+                            <a href="product-catalog.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Pakaian</a>
+                            <a href="product-catalog.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Aksesoris</a>
+                            <a href="product-catalog.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Peralatan</a>
+                        </div>
+                    </div>
+                    <a href="#" class="bg-red-600 px-4 py-1 rounded-full hover:bg-red-700 font-medium">Sale</a>
+                </nav>
+                
+                <!-- Search and User Actions -->
+                <div class="flex items-center space-x-4">
+                    <div class="relative hidden md:block">
+                        <input type="text" placeholder="Cari produk..." class="py-1 pl-8 pr-4 rounded-full text-black w-64 focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                    <a href="#" class="hover:text-gray-300 relative">
+                        <i class="fas fa-heart"></i>
+                        <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">0</span>
+                    </a>
+                    <a href="cart.html" class="hover:text-gray-300 relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">0</span>
+                    </a>
+                    <a href="#" class="hover:text-gray-300 hidden md:block">Login | Register</a>
+                    <button class="md:hidden text-white">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="bg-white p-4 shadow-sm">
+        <div class="container mx-auto">
+            <div class="text-sm">
+                <a href="index.html" class="text-gray-500 hover:text-black">Home</a> > 
+                <span class="font-semibold">Katalog Produk</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto py-8">
+        <!-- Category Banner -->
+        <div class="relative mb-8">
+            <img src="https://topsystem.id/api/banner/1905x914/1683873865.jpg" alt="Running Shoes" class="w-full h-64 object-cover rounded">
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-white"></h1>
+            </div>
+        </div>
+        
+        <!-- Filter and Sort Section -->
+        <div class="flex flex-col md:flex-row gap-6 mb-8">
+            <!-- Filter Sidebar -->
+            <div class="md:w-1/4">
+                <div class="bg-white p-4 rounded shadow">
+                    <h2 class="text-xl font-bold mb-4">Filter</h2>
+                    
+                    <!-- Brand Filter -->
+                    <div class="mb-6">
+                        <h3 class="font-bold mb-2">Brand</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Nike
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Adidas
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Asics
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> New Balance
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Puma
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Under Armour
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Price Filter -->
+                    <div class="mb-6">
+                        <h3 class="font-bold mb-2">Harga</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Dibawah Rp 1.000.000
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Rp 1.000.000 - Rp 2.000.000
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Rp 2.000.000 - Rp 3.000.000
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Diatas Rp 3.000.000
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Size Filter -->
+                    <div class="mb-6">
+                        <h3 class="font-bold mb-2">Ukuran</h3>
+                        <div class="grid grid-cols-3 gap-2">
+                            <button class="border border-gray-300 p-2 hover:bg-gray-100">38</button>
+                            <button class="border border-gray-300 p-2 hover:bg-gray-100">39</button>
+                            <button class="border border-gray-300 p-2 hover:bg-gray-100">40</button>
+                            <button class="border border-gray-300 p-2 hover:bg-gray-100">41</button>
+                            <button class="border border-gray-300 p-2 hover:bg-gray-100">42</button>
+                            <button class="border border-gray-300 p-2 hover:bg-gray-100">43</button>
+                            <button class="border border-gray-300 p-2 hover:bg-gray-100">44</button>
+                            <button class="border border-gray-300 p-2 hover:bg-gray-100">45</button>
+                            <button class="border border-gray-300 p-2 hover:bg-gray-100">46</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Color Filter -->
+                    <div class="mb-6">
+                        <h3 class="font-bold mb-2">Warna</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <button class="w-8 h-8 rounded-full bg-black border border-gray-300"></button>
+                            <button class="w-8 h-8 rounded-full bg-white border border-gray-300"></button>
+                            <button class="w-8 h-8 rounded-full bg-red-600 border border-gray-300"></button>
+                            <button class="w-8 h-8 rounded-full bg-blue-600 border border-gray-300"></button>
+                            <button class="w-8 h-8 rounded-full bg-green-600 border border-gray-300"></button>
+                            <button class="w-8 h-8 rounded-full bg-yellow-400 border border-gray-300"></button>
+                            <button class="w-8 h-8 rounded-full bg-gray-400 border border-gray-300"></button>
+                            <button class="w-8 h-8 rounded-full bg-pink-400 border border-gray-300"></button>
+                        </div>
+                    </div>
+                    
+                    <button class="w-full bg-black text-white py-2 rounded hover:bg-gray-800">Terapkan Filter</button>
+                </div>
+            </div>
+            
+            <!-- Product Grid -->
+            <div class="md:w-3/4">
+                <!-- Sort Options -->
+                <div class="bg-white p-4 rounded shadow mb-6 flex justify-between items-center">
+                    <div>
+                        <span class="font-bold">120</span> produk ditemukan
+                    </div>
+                    <div class="flex items-center">
+                        <label class="mr-2">Urutkan:</label>
+                        <select class="border border-gray-300 rounded p-2">
+                            <option>Terbaru</option>
+                            <option>Harga: Rendah ke Tinggi</option>
+                            <option>Harga: Tinggi ke Rendah</option>
+                            <option>Nama: A-Z</option>
+                            <option>Nama: Z-A</option>
+                            <option>Paling Populer</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Products -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Product 1 -->
+                    <div class="bg-white rounded shadow overflow-hidden group">
+                        <div class="relative">
+                            <a href="product-detail.html">
+                                <img src="https://aad216.a-cdn.akinoncloud.com/products/2023/10/11/218700/a7ffa915-2690-4001-bb4a-a14de74620d7_size1000x1000_cropCenter.jpg" alt="Running Shoe 1" class="w-full h-64 object-cover">
+                            </a>
+                            <div class="absolute top-0 right-0 bg-red-600 text-white text-xs px-2 py-1">-20%</div>
+                            <div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100 mr-2">
+                                    🛒 Tambah
+                                </button>
+                                <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100">
+                                    ❤️ Wishlist
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="text-gray-500 mb-1">Nike</div>
+                            <h3 class="font-bold mb-1">Nike Air Zoom Pegasus 39</h3>
+                            <div class="text-gray-700 mb-2">Black/White</div>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    ★★★★★
+                                </div>
+                                <span class="text-gray-500 text-sm ml-1">(120)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-red-600 font-bold">Rp 1.599.000</span>
+                                <span class="text-gray-500 line-through ml-2">Rp 1.999.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="bg-white rounded shadow overflow-hidden group">
+                        <div class="relative">
+                            <a href="product-detail.html">
+                                <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2023/3/24/e95a5a2f-15a5-43ba-908b-2dc7b5727fa3.jpg" alt="Running Shoe 2" class="w-full h-64 object-cover">
+                            </a>
+                            <div class="absolute top-0 right-0 bg-green-600 text-white text-xs px-2 py-1">NEW</div>
+                            <div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100 mr-2">
+                                    🛒 Tambah
+                                </button>
+                                <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100">
+                                    ❤️ Wishlist
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="text-gray-500 mb-1">Adidas</div>
+                            <h3 class="font-bold mb-1">Adidas Ultraboost 23</h3>
+                            <div class="text-gray-700 mb-2">Cloud White</div>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    ★★★★☆
+                                </div>
+                                <span class="text-gray-500 text-sm ml-1">(85)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-red-600 font-bold">Rp 2.899.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="bg-white rounded shadow overflow-hidden group">
+                        <div class="relative">
+                            <a href="product-detail.html">
+                                <img src="https://down-id.img.susercontent.com/file/sg-11134201-7qvdw-ljkpkhzm2dnba6" alt="Running Shoe 3" class="w-full h-64 object-cover">
+                            </a>
+                            <div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100 mr-2">
+                                    🛒 Tambah
+                                </button>
+                                <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100">
+                                    ❤️ Wishlist
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="text-gray-500 mb-1">Asics</div>
+                            <h3 class="font-bold mb-1">Asics Gel-Nimbus 25</h3>
+                            <div class="text-gray-700 mb-2">Blue/Orange</div>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    ★★★★★
+                                </div>
+                                <span class="text-gray-500 text-sm ml-1">(92)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-red-600 font-bold">Rp 2.299.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="bg-white rounded shadow overflow-hidden group">
+                        <div class="relative">
+                            <a href="product-detail.html">
+                                <img src="https://cf.shopee.co.id/file/id-11134207-23030-t8dvkeg0jqov25" alt="Running Shoe 4" class="w-full h-64 object-cover">
+                            </a>
+                            <div class="absolute top-0 right-0 bg-red-600 text-white text-xs px-2 py-1">-15%</div>
+                            <div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100 mr-2">
+                                    🛒 Tambah
+                                </button>
+                                <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100">
+                                    ❤️ Wishlist
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="text-gray-500 mb-1">New Balance</div>
+                            <h3 class="font-bold mb-1">New Balance Fresh Foam X 1080v12</h3>
+                            <div class="text-gray-700 mb-2">Gray/Yellow</div>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    ★★★★☆
+                                </div>
+                                <span class="text-gray-500 text-sm ml-1">(78)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-red-600 font-bold">Rp 1.869.000</span>
+                                <span class="text-gray-500 line-through ml-2">Rp 2.199.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 5 -->
+                    <div class="bg-white rounded shadow overflow-hidden group">
+                        <div class="relative">
+                            <a href="product-detail.html">
+                                <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2024/3/24/481ac538-da00-444a-97ec-cb65f2b18932.jpg" alt="Running Shoe 5" class="w-full h-64 object-cover">
+                            </a>
+                            <div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100 mr-2">
+                                    🛒 Tambah
+                                </button>
+                                <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100">
+                                    ❤️ Wishlist
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="text-gray-500 mb-1">Hoka</div>
+                            <h3 class="font-bold mb-1">Hoka Clifton 9</h3>
+                            <div class="text-gray-700 mb-2">Black/White</div>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    ★★★★★
+                                </div>
+                                <span class="text-gray-500 text-sm ml-1">(105)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-red-600 font-bold">Rp 2.099.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 6 -->
+                    <div class="bg-white rounded shadow overflow-hidden group">
+                        <div class="relative">
+                            <a href="product-detail.html">
+                                <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2023/5/31/3b1aa7d6-877f-4a28-bb55-7d5044ed2731.jpg" alt="Running Shoe 6" class="w-full h-64 object-cover">
+                            </a>
+                            <div class="absolute top-0 right-0 bg-green-600 text-white text-xs px-2 py-1">NEW</div>
+                            <div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100 mr-2">
+                                    🛒 Tambah
+                                </button>
+                                <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100">
+                                    ❤️ Wishlist
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="text-gray-500 mb-1">Brooks</div>
+                            <h3 class="font-bold mb-1">Brooks Ghost 15</h3>
+                            <div class="text-gray-700 mb-2">Blue/Green</div>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    ★★★★☆
+                                </div>
+                                <span class="text-gray-500 text-sm ml-1">(67)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-red-600 font-bold">Rp 1.999.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- More products (7-9) -->
+                    <div class="bg-white rounded shadow overflow-hidden group">
+                        <div class="relative">
+                            <a href="product-detail.html">
+                                <img src="https://www.theendurancestore.com/cdn/shop/files/S10830-16_1_960x.jpg?v=1700577539" alt="Running Shoe 7" class="w-full h-64 object-cover">
+                            </a>
+                            <div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100 mr-2">
+                                    🛒 Tambah
+                                </button>
+                                <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100">
+                                    ❤️ Wishlist
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="text-gray-500 mb-1">Saucony</div>
+                            <h3 class="font-bold mb-1">Saucony Ride 16</h3>
+                            <div class="text-gray-700 mb-2">Red/Black</div>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    ★★★★☆
+                                </div>
+                                <span class="text-gray-500 text-sm ml-1">(54)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-red-600 font-bold">Rp 1.799.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded shadow overflow-hidden group">
+                        <div class="relative">
+                            <a href="product-detail.html">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDARD3qhqsEappeRYXnwPiHy4nPkV7kx--yQ&s" alt="Running Shoe 8" class="w-full h-64 object-cover">
+                            </a>
+                            <div class="absolute top-0 right-0 bg-red-600 text-white text-xs px-2 py-1">-25%</div>
+                            <div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100 mr-2">
+                                    🛒 Tambah
+                                </button>
+                                <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100">
+                                    ❤️ Wishlist
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="text-gray-500 mb-1">Puma</div>
+                            <h3 class="font-bold mb-1">Puma Velocity Nitro 2</h3>
+                            <div class="text-gray-700 mb-2">Black/Red</div>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    ★★★★☆
+                                </div>
+                                <span class="text-gray-500 text-sm ml-1">(42)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-red-600 font-bold">Rp 1.349.000</span>
+                                <span class="text-gray-500 line-through ml-2">Rp 1.799.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded shadow overflow-hidden group">
+                        <div class="relative">
+                            <a href="product-detail.html">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyzRwbEuLdZq79c9UBG0cdgs9OrvnGE8NUKQ&s" alt="Running Shoe 9" class="w-full h-64 object-cover">
+                            </a>
+                            <div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100 mr-2">
+                                    🛒 Tambah
+                                </button>
+                                <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100">
+                                    ❤️ Wishlist
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="text-gray-500 mb-1">Under Armour</div>
+                            <h3 class="font-bold mb-1">Under Armour HOVR Phantom 3</h3>
+                            <div class="text-gray-700 mb-2">Gray/Blue</div>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    ★★★★☆
+                                </div>
+                                <span class="text-gray-500 text-sm ml-1">(38)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-red-600 font-bold">Rp 1.999.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="flex justify-center mt-8">
+                    <div class="flex space-x-2">
+                        <a href="#" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">«</a>
+                        <a href="#" class="bg-black text-white px-4 py-2 rounded">1</a>
+                        <a href="#" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">2</a>
+                        <a href="#" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">3</a>
+                        <a href="#" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">4</a>
+                        <a href="#" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">5</a>
+                        <a href="#" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">»</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white p-6 mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div>
+                <p class="font-bold">SOCIAL</p>
+                <div class="flex space-x-2 mt-2">
+                    <a href="#" class="text-gray-400 hover:text-white">FB</a>
+                    <a href="#" class="text-gray-400 hover:text-white">IG</a>
+                    <a href="#" class="text-gray-400 hover:text-white">TW</a>
+                </div>
+            </div>
+            <div>
+                <p class="font-bold">BANTUAN</p>
+                <p><a href="#" class="text-gray-400 hover:text-white">Cara Belanja</a></p>
+                <p><a href="#" class="text-gray-400 hover:text-white">Syarat dan Ketentuan</a></p>
+                <p><a href="#" class="text-gray-400 hover:text-white">Konfirmasi Pembayaran</a></p>
+            </div>
+            <div>
+                <p class="font-bold">CUSTOMER SERVICE</p>
+                <p>+62 123-456-7890</p>
+                <p><a href="#" class="text-gray-400 hover:text-white">sportgear@contact.com</a></p>
+            </div>
+            <div>
+                <p class="font-bold">LAPORAN PENGADUAN KONSUMEN</p>
+                <p>Direktorat Jenderal Perlindungan Konsumen dan Tertib Niaga Kementerian Perdagangan Republik Indonesia</p>
+                <p>+62 123-456-7890</p>
+            </div>
+        </div>
+        <div class="mt-4 text-center">
+            <p>© 2025 SportGear. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
